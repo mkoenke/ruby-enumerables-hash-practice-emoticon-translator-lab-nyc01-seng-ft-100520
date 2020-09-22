@@ -1,4 +1,5 @@
-# require modules here
+#require modules here
+require 'pry'
 require "yaml"
 
 def load_library(file_path)
@@ -33,7 +34,8 @@ def get_english_meaning(file_path, emoticon_name)
   end
   if emoticon_name
   #  emoji.key(:english)
-    emoji.key(emoticon_name)
+    emoji.key
+    binding.pry
   else
     return "Sorry, that emoticon was not found"
   end
