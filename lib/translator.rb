@@ -33,7 +33,7 @@ def get_english_meaning(file_path, emoticon_name)
   end
   if emoticon_name
   #  emoji.key(:english)
-    emoji
+    emoji.key
   else
     return "Sorry, that emoticon was not found"
   end
