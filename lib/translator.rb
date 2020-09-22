@@ -32,6 +32,7 @@ def get_english_meaning(file_path, emoticon_name)
   emoticon_name = emoji.keys.find do |key|
     emoji[key][:japanese] == emoticon_name
   end
+  binding.pry
   if emoticon_name
     emoji.keys
     binding.pry
